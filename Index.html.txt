@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Bubu</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, pink, lightblue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      animation: bgmove 5s infinite alternate;
+    }
+
+    @keyframes bgmove {
+      from { filter: hue-rotate(0deg); }
+      to { filter: hue-rotate(60deg); }
+    }
+
+    h1 {
+      font-size: 3rem;
+      animation: pop 1.5s infinite alternate;
+      color: red;
+    }
+
+    @keyframes pop {
+      from { transform: scale(1); }
+      to { transform: scale(1.2); }
+    }
+
+    img {
+      width: 250px;
+      margin-top: 20px;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Sorry and I love you bubu ❤️</h1>
+    <img src="https://media.tenor.com/qn7d9D0H5qkAAAAi/bubu-dudu.gif" alt="Bubu Dudu">
+  </div>
+</body>
+</html>
